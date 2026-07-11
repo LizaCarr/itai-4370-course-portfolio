@@ -1,0 +1,8 @@
+Course Portfolio Submission
+
+Student: Elizabeth Carrillo
+Course: ITAI 4370
+Platform: GitHub Pages
+Live portfolio link: https://YOUR-GITHUB-USERNAME.github.io/itai-4370-course-portfolio/
+
+The portfolio includes selected works, reflective essays, project documentation, assessment artifacts, code and diagrams, and evidence of progression from telecommunications fundamentals to advanced AI applications.

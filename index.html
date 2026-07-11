@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Elizabeth Carrillo's ITAI 4370 course portfolio documenting telecommunications, AI, 5G, Open RAN, edge computing, and next-generation networks.">
+  <meta name="author" content="Elizabeth Carrillo">
+  <title>Elizabeth Carrillo | ITAI 4370 Course Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav-wrap" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Return to portfolio home">
+        <span class="brand-mark" aria-hidden="true">EC</span>
+        <span><strong>Elizabeth Carrillo</strong><small>ITAI 4370 Portfolio</small></span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+      <div class="site-menu" id="site-menu">
+        <a href="#selected-works">Selected Works</a>
+        <a href="#reflections">Reflections</a>
+        <a href="#projects">Projects</a>
+        <a href="#assessments">Assessments</a>
+        <a href="#growth">Growth</a>
+        <a href="#references">References</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Houston City College · July 2026</p>
+        <h1 id="hero-title">Telecommunications, AI, and Next-Generation Networks</h1>
+        <p class="hero-lead">A course portfolio documenting my progression from communication-system fundamentals to AI-driven network prediction, Open RAN, edge computing, cybersecurity, sustainable communications, and the developing vision for 6G.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#selected-works">Explore my work</a>
+          <a class="button secondary" href="assets/files/FE_Elizabeth_Carrillo_ITAI_4370.pdf">Download Final Exam Portfolio</a>
+        </div>
+        <dl class="hero-stats" aria-label="Portfolio highlights">
+          <div><dt>14</dt><dd>Course modules represented</dd></div>
+          <div><dt>5</dt><dd>Laboratory experiences</dd></div>
+          <div><dt>3</dt><dd>Reflective essays</dd></div>
+          <div><dt>4</dt><dd>Detailed project studies</dd></div>
+        </dl>
+      </div>
+      <div class="hero-visual" aria-label="Learning progression illustration">
+        <div class="orbit orbit-one"><span>Signals</span></div>
+        <div class="orbit orbit-two"><span>5G &amp; Open RAN</span></div>
+        <div class="orbit orbit-three"><span>AI &amp; Edge</span></div>
+        <div class="core">ITAI<br>4370</div>
+      </div>
+    </section>
+
+    <section class="section-shell intro-grid" aria-labelledby="portfolio-purpose">
+      <div>
+        <p class="section-kicker">Portfolio purpose</p>
+        <h2 id="portfolio-purpose">Evidence of learning, not only a list of assignments</h2>
+      </div>
+      <div class="prose">
+        <p>This portfolio combines selected artifacts, reflections, practical project documentation, assessment evidence, and a learning timeline. I organized it to show how each course activity added a new layer to my understanding. Early work focused on signals, channels, topologies, and wireless propagation. Later work applied machine learning and time-series analysis to network traffic, examined AI control in Open RAN, and considered the limits of deploying models on edge devices.</p>
+        <p>The site is designed to remain updateable. New files can be added to the artifact folders, project results can be replaced with original screenshots, and the update date can be changed without rebuilding the full portfolio.</p>
+      </div>
+    </section>
+
+    <section class="section-shell" id="selected-works" aria-labelledby="selected-title">
+      <div class="section-heading">
+        <div><p class="section-kicker">Selected works</p><h2 id="selected-title">Artifacts that demonstrate technical understanding</h2></div>
+        <div class="filter-group" role="group" aria-label="Filter selected works">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="fundamentals">Fundamentals</button>
+          <button class="filter-button" type="button" data-filter="ai">AI / ML</button>
+          <button class="filter-button" type="button" data-filter="networks">5G / Networks</button>
+        </div>
+      </div>
+
+      <div class="work-grid">
+        <article class="work-card" data-category="fundamentals">
+          <img src="assets/images/fig01_communication_flow.png" alt="Block diagram showing source bits, modulator, channel, demodulator, and receiver bits.">
+          <div class="card-body">
+            <p class="tag">Laboratory 01</p>
+            <h3>Conceptual Communication System</h3>
+            <p>I modeled the complete signal path from source to receiver and identified where modulation, noise, attenuation, and recovery affect communication quality.</p>
+            <a href="assets/images/fig01_communication_flow.png">Open artifact</a>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="fundamentals">
+          <img src="assets/images/fig02_fspl.png" alt="Line graph showing free-space path loss increasing as distance increases at 2.4 gigahertz.">
+          <div class="card-body">
+            <p class="tag">Laboratory 02</p>
+            <h3>Free-Space Path Loss Model</h3>
+            <p>Python and Matplotlib were used to show how path loss rises from about 80.04 dB at 0.1 km to 126.06 dB at 20 km for a 2.4 GHz signal.</p>
+            <a href="assets/code/Laboratory_02_FSPL.py">View Python code</a>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="ai">
+          <img src="assets/images/fig04_lab3_prediction.png" alt="Actual versus predicted network traffic chart beside a feature-importance chart.">
+          <div class="card-body">
+            <p class="tag">Laboratory 03</p>
+            <h3>Network Traffic Prediction</h3>
+            <p>A Random Forest model achieved a testing R² of 0.893. One-hour lag traffic was the strongest feature, showing the predictive value of recent network behavior.</p>
+            <a href="assets/code/Laboratory_03_Network_Traffic_Prediction.py">View Python code</a>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="ai">
+          <img src="assets/images/fig07_lab4_decomposition.png" alt="Four time-series plots showing observed traffic, trend, seasonal behavior, and residual values.">
+          <div class="card-body">
+            <p class="tag">Laboratory 04</p>
+            <h3>Time-Series Forecasting</h3>
+            <p>I studied trend, seasonality, stationarity, ARIMA forecasting, engineered features, and the role of LSTM models in predicting future network demand.</p>
+            <a href="assets/code/Laboratory_04_Time_Series_Analysis.txt">Open laboratory documentation</a>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="ai networks">
+          <img src="assets/images/fig09_lab5_parameters.png" alt="Bar chart comparing parameter counts for baseline, reduced, and student neural-network models.">
+          <div class="card-body">
+            <p class="tag">Laboratory 05</p>
+            <h3>Edge AI Model Optimization</h3>
+            <p>The architectures decreased from 13,123 parameters in the baseline model to 3,523 in the reduced model and 1,251 in the student model.</p>
+            <a href="assets/code/Laboratory_05_Edge_Computing_Simulation.txt">Open laboratory documentation</a>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="networks">
+          <img src="assets/images/fig06_openran.png" alt="Open RAN architecture showing radio, distributed and centralized units, core network, and near-real-time and non-real-time controllers.">
+          <div class="card-body">
+            <p class="tag">Assignment 03</p>
+            <h3>Open RAN and Intelligent Control</h3>
+            <p>I compared traditional RAN with Open RAN and distinguished fast Near-RT RIC control through xApps from policy and learning functions in the Non-RT RIC through rApps.</p>
+            <a href="assets/images/fig06_openran.png">Open artifact</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell alt-section" id="reflections" aria-labelledby="reflection-title">
+      <div class="section-heading narrow">
+        <div><p class="section-kicker">Reflective essays</p><h2 id="reflection-title">How my understanding and skills changed</h2></div>
+      </div>
+
+      <div class="reflection-list">
+        <article class="reflection-card">
+          <div class="reflection-number" aria-hidden="true">01</div>
+          <div>
+            <h3>How my understanding of telecommunications evolved</h3>
+            <p>At the beginning of the course, I mainly thought of telecommunications as phones, internet access, and wireless signals. Module 1 changed that view by showing that every communication service depends on a structured process. Information begins at a source, is converted by a transmitter, travels through a channel, and must be reconstructed by a receiver. The quality of the result depends on bandwidth, latency, noise, attenuation, reliability, and the architecture that connects the devices.</p>
+            <p>The Free-Space Path Loss laboratory made the physical limitations of wireless communication more concrete. Instead of only reading that a signal weakens with distance, I calculated the loss and displayed it in a graph. I could see that at the same 2.4 GHz frequency, path loss rose by approximately 46 dB between 0.1 km and 20 km. This helped me understand why coverage planning requires antenna placement, power, frequency choice, and realistic expectations about the environment.</p>
+            <p>My understanding then expanded from the signal path to complete mobile-network architecture. I learned why 5G Core uses a service-based architecture, how network slicing supports services with different requirements, and how MEC moves processing closer to users to reduce delay. Open RAN added another level because it showed how the radio network can be separated into interoperable components and controlled through intelligent applications. By the end of the course, I no longer viewed telecommunications as one connection. I viewed it as a coordinated system of radio access, core functions, computing, software, data, security, and operational decisions.</p>
+          </div>
+        </article>
+
+        <article class="reflection-card">
+          <div class="reflection-number" aria-hidden="true">02</div>
+          <div>
+            <h3>How I applied AI concepts to telecommunications problems</h3>
+            <p>The course showed me that AI becomes useful when it is connected to a clear network problem. In Laboratory 03, the problem was predicting hourly traffic so that a network could prepare resources before demand increased. I generated data with daily, weekly, annual, and business-hour patterns. I then created lag and rolling-average features and trained a Random Forest regressor. The testing R² of 0.893 showed that the model captured most of the traffic variation in the synthetic test period.</p>
+            <p>The feature-importance result was also meaningful. Traffic from one hour earlier contributed about 81.6% of the model's total importance, while hour of day and traffic from 24 hours earlier added additional context. This result connected machine-learning concepts to a practical network-management idea: recent behavior is valuable for short-term scheduling, but calendar patterns and repeated daily behavior also matter.</p>
+            <p>Laboratory 04 expanded the same problem into time-series analysis. I studied seasonal decomposition, stationarity, ARIMA, linear regression with engineered features, and the concept of LSTM sequence modeling. The ARIMA example produced an RMSE of about 51.03 Mbps on the simulated test set. That result was not only a score; it demonstrated that a model must be evaluated against the pattern and variability of the data before it can guide operational decisions.</p>
+            <p>Laboratory 05 applied AI to a different telecommunications problem: deploying inference near IoT devices. The focus changed from maximum model capacity to a balance among accuracy, model size, latency, memory, and energy. This taught me that the best model depends on where it will run. A cloud server can support a larger model, while a microcontroller may require INT8 quantization or a much smaller network. AI in telecommunications is therefore both a prediction problem and a systems-engineering problem.</p>
+          </div>
+        </article>
+
+        <article class="reflection-card">
+          <div class="reflection-number" aria-hidden="true">03</div>
+          <div>
+            <h3>Skills I improved and areas for future growth</h3>
+            <p>I improved my ability to connect code output with an engineering interpretation. Earlier, I might have reported that a graph increased or that a model had a certain score. Through these laboratories, I practiced explaining why the result matters. Path loss affects coverage planning. Traffic prediction can support resource allocation. Seasonal decomposition can separate recurring behavior from unexplained events. Model compression can make local inference possible on devices with limited memory and power.</p>
+            <p>I also became more comfortable with Python libraries used for technical analysis, including NumPy, pandas, Matplotlib, scikit-learn, statsmodels, and TensorFlow concepts. I practiced preparing data, creating engineered features, splitting time-series data chronologically, evaluating models with MSE, MAE, RMSE, and R², and presenting results through readable visualizations.</p>
+            <p>My future growth areas are working with real telecommunications datasets, validating models under changing network conditions, and learning more about deployment. Synthetic data made it possible to understand the complete process, but real network data contains missing values, unexpected events, changing user behavior, and privacy restrictions. I also want to improve my knowledge of RIC applications, cloud-edge orchestration, model monitoring, and cybersecurity for AI systems. These skills would help me move from classroom simulations toward reliable AI solutions for operational networks.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div><p class="section-kicker">Project documentation</p><h2 id="projects-title">Problems, methods, results, and interpretations</h2></div>
+      </div>
+
+      <div class="project-stack">
+        <article class="project-card">
+          <div class="project-media"><img src="assets/images/fig02_fspl.png" alt="Free-space path loss graph for a 2.4 GHz signal from 0.1 to 20 kilometers."></div>
+          <div class="project-content">
+            <p class="tag">Project 1 · Wireless propagation</p>
+            <h3>Free-Space Path Loss at 2.4 GHz</h3>
+            <div class="project-grid">
+              <div><h4>Problem statement</h4><p>How does distance affect the theoretical propagation loss of a 2.4 GHz wireless signal?</p></div>
+              <div><h4>Methods and tools</h4><p>NumPy generated 100 distances from 0.1 to 20 km. The FSPL formula was applied and Matplotlib displayed the result.</p></div>
+              <div><h4>Results</h4><p>Loss increased from 80.04 dB at 0.1 km to 100.04 dB at 1 km, 120.04 dB at 10 km, and 126.06 dB at 20 km.</p></div>
+              <div><h4>Interpretation</h4><p>Distance creates a large theoretical loss even before buildings, weather, antenna mismatch, and interference are considered.</p></div>
+            </div>
+            <details><summary>View code snippet</summary><pre><code>fspl = 20*np.log10(distances) \
+     + 20*np.log10(frequency) + 32.44</code></pre></details>
+            <a class="text-link" href="assets/code/Laboratory_02_FSPL.py">Download full Python file</a>
+          </div>
+        </article>
+
+        <article class="project-card reverse">
+          <div class="project-media"><img src="assets/images/fig04_lab3_prediction.png" alt="Traffic prediction and feature-importance graphs for the Random Forest model."></div>
+          <div class="project-content">
+            <p class="tag">Project 2 · Supervised learning</p>
+            <h3>Network Traffic Prediction with Random Forest</h3>
+            <div class="project-grid">
+              <div><h4>Problem statement</h4><p>Can historical and calendar-based features predict hourly telecommunications traffic?</p></div>
+              <div><h4>Methods and tools</h4><p>A synthetic 2023 dataset was created with seasonal patterns. A chronological 80/20 split and a 100-tree Random Forest regressor were used.</p></div>
+              <div><h4>Results</h4><p>Testing MSE was 34.64 and testing R² was 0.893. The one-hour lag feature contributed about 81.6% of total feature importance.</p></div>
+              <div><h4>Interpretation</h4><p>The model learned recurring demand and short-term continuity, supporting the idea of proactive allocation before congestion develops.</p></div>
+            </div>
+            <details><summary>View code snippet</summary><pre><code>model = RandomForestRegressor(
+    n_estimators=100,
+    max_depth=10,
+    random_state=42
+)
+model.fit(X_train, y_train)</code></pre></details>
+            <a class="text-link" href="assets/code/Laboratory_03_Network_Traffic_Prediction.py">Download full Python file</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media"><img src="assets/images/fig08_lab4_arima.png" alt="ARIMA forecast compared with actual test traffic and recent training traffic."></div>
+          <div class="project-content">
+            <p class="tag">Project 3 · Time-series analysis</p>
+            <h3>Forecasting Network Demand</h3>
+            <div class="project-grid">
+              <div><h4>Problem statement</h4><p>How can time-series models use trend and seasonality to forecast future network traffic?</p></div>
+              <div><h4>Methods and tools</h4><p>The lab generated hourly traffic with daily and weekly behavior, trend, seasonal variation, random noise, and congestion spikes. It used decomposition, ADF testing, ARIMA, regression features, and an LSTM concept.</p></div>
+              <div><h4>Results</h4><p>The ADF p-value was far below 0.05 for the training series. The documented ARIMA(2,1,2) run produced MAE 42.38 Mbps and RMSE 51.03 Mbps.</p></div>
+              <div><h4>Interpretation</h4><p>Forecast errors must be considered alongside abnormal spikes and recurring patterns. No single metric is sufficient for deciding whether a model is operationally useful.</p></div>
+            </div>
+            <p class="note"><strong>Documentation note:</strong> The source text available for this portfolio ends during the LSTM section. The portfolio therefore reports the complete ARIMA and regression concepts without inventing missing LSTM results.</p>
+            <a class="text-link" href="assets/code/Laboratory_04_Time_Series_Analysis.txt">Open source laboratory text</a>
+          </div>
+        </article>
+
+        <article class="project-card reverse">
+          <div class="project-media"><img src="assets/images/fig10_edge_ai.png" alt="Workflow from IoT sensors to an edge device, optimized AI model, local decision, and optional cloud connection."></div>
+          <div class="project-content">
+            <p class="tag">Project 4 · Edge computing</p>
+            <h3>Optimizing AI for Resource-Constrained Devices</h3>
+            <div class="project-grid">
+              <div><h4>Problem statement</h4><p>How can an IoT classification model be made small and fast enough for edge deployment?</p></div>
+              <div><h4>Methods and tools</h4><p>TensorFlow/Keras architectures represented a baseline model, a reduced model, INT8 quantization, and a smaller student model. The design compared accuracy, inference time, size, and parameters.</p></div>
+              <div><h4>Results</h4><p>Code-derived architecture counts were 13,123 parameters for the baseline, 3,523 for the reduced model, and 1,251 for the student model.</p></div>
+              <div><h4>Interpretation</h4><p>Edge selection is a tradeoff. Microcontrollers favor quantized models, gateways can use reduced models, and edge servers can support larger models when accuracy is the priority.</p></div>
+            </div>
+            <p class="note"><strong>Technical note:</strong> The course code labels a smaller architecture as “pruned” and trains the student with ordinary categorical loss. I describe those steps accurately rather than claiming formal weight pruning or full knowledge distillation.</p>
+            <a class="text-link" href="assets/code/Laboratory_05_Edge_Computing_Simulation.txt">Open source laboratory text</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell alt-section" id="assessments" aria-labelledby="assessment-title">
+      <div class="section-heading narrow">
+        <div><p class="section-kicker">Assessment artifacts</p><h2 id="assessment-title">Evidence of performance and progress</h2></div>
+      </div>
+      <div class="assessment-grid">
+        <article><span>Module 1</span><h3>Assignment 01</h3><p>Telecommunications systems, transmitter-channel-receiver roles, analog versus digital communication, service types, and network topologies.</p></article>
+        <article><span>Module 1</span><h3>Laboratory 01</h3><p>Communication-system diagram and signal-flow analysis using conceptual blocks and Python visualization.</p></article>
+        <article><span>Module 2</span><h3>Laboratory 02</h3><p>Free-Space Path Loss simulation at 2.4 GHz with code and graphical output.</p></article>
+        <article><span>Module 2</span><h3>Assignment 02</h3><p>EPC versus 5GC, slicing, MEC, AI resource allocation, and the Network Repository Function.</p></article>
+        <article><span>Module 3</span><h3>Assignment 03</h3><p>AI/ML in RAN, SON, predictive maintenance, normalized demand, Open RAN, and RIC roles.</p></article>
+        <article><span>Module 3</span><h3>Laboratory 03</h3><p>Supervised network-traffic prediction using Random Forest and engineered temporal features.</p></article>
+        <article><span>Module 6</span><h3>Laboratory 04</h3><p>Time-series forecasting with ARIMA, engineered regression features, and an LSTM introduction.</p></article>
+        <article><span>Module 7</span><h3>Laboratory 05</h3><p>Edge inference and model optimization using smaller architectures and INT8 quantization.</p></article>
+        <article><span>Module 10</span><h3>Midterm Project</h3><p>Advanced AI applications, AI-native architecture, and digital-twin networking concepts.</p></article>
+        <article><span>Module 11</span><h3>Quiz</h3><p>6G vision, AI-native networks, advanced connectivity, and future-network capabilities.</p></article>
+        <article><span>Module 13</span><h3>Assignment 04</h3><p>Ethical AI, privacy, fairness, explainability, accountability, and human oversight.</p></article>
+        <article class="featured-assessment"><span>Module 14</span><h3>Final Exam Portfolio</h3><p>A complete module-by-module narrative with diagrams, calculated laboratory results, reflections, and references.</p><div class="artifact-links"><a href="assets/files/FE_Elizabeth_Carrillo_ITAI_4370.pdf">PDF</a><a href="assets/files/FE_Elizabeth_Carrillo_ITAI_4370.docx">Editable DOCX</a></div></article>
+      </div>
+    </section>
+
+    <section class="section-shell" id="growth" aria-labelledby="growth-title">
+      <div class="section-heading narrow">
+        <div><p class="section-kicker">Growth evidence</p><h2 id="growth-title">Progression from basic concepts to advanced applications</h2></div>
+      </div>
+      <ol class="timeline">
+        <li><div class="timeline-marker">1–2</div><div><h3>Foundations and wireless behavior</h3><p>Defined communication systems, compared analog and digital signals, evaluated topologies, mapped signal flow, and modeled RF path loss.</p><ul><li>Skills: systems thinking, technical diagrams, formula implementation, plotting</li></ul></div></li>
+        <li><div class="timeline-marker">3–4</div><div><h3>AI fundamentals and 5G architecture</h3><p>Moved from data features and supervised learning into 5G Core, slicing, MEC, and AI-assisted resource allocation.</p><ul><li>Skills: feature engineering, model evaluation, architecture comparison</li></ul></div></li>
+        <li><div class="timeline-marker">5–7</div><div><h3>Open RAN, optimization, and edge intelligence</h3><p>Studied RIC control, SON, predictive maintenance, time-series forecasting, IoT, and optimized inference near devices.</p><ul><li>Skills: RAN reasoning, forecasting, model-size tradeoffs, edge deployment analysis</li></ul></div></li>
+        <li><div class="timeline-marker">8–10</div><div><h3>Secure, sustainable, and autonomous networks</h3><p>Connected AI to anomaly detection, energy-aware operation, digital twins, and closed-loop management.</p><ul><li>Skills: risk analysis, multi-objective evaluation, lifecycle thinking</li></ul></div></li>
+        <li><div class="timeline-marker">11–14</div><div><h3>6G vision, ethics, and integration</h3><p>Evaluated AI-native future networks while recognizing privacy, fairness, accountability, security, and human-oversight requirements.</p><ul><li>Skills: responsible innovation, synthesis, professional technical communication</li></ul></div></li>
+      </ol>
+    </section>
+
+    <section class="section-shell skills-section" aria-labelledby="skills-title">
+      <div><p class="section-kicker">Competencies developed</p><h2 id="skills-title">Technical and professional skills</h2></div>
+      <div class="skills-grid">
+        <div><h3>Programming &amp; data</h3><p>Python, NumPy, pandas, Matplotlib, scikit-learn, statsmodels, TensorFlow/Keras concepts</p></div>
+        <div><h3>Telecommunications</h3><p>Signal flow, path loss, EPC, 5GC, slicing, MEC, Open RAN, RIC, IoT, edge computing</p></div>
+        <div><h3>AI evaluation</h3><p>Feature engineering, chronological splitting, MSE, MAE, RMSE, R², feature importance</p></div>
+        <div><h3>Communication</h3><p>Technical diagrams, reflective writing, result interpretation, artifact organization, source awareness</p></div>
+      </div>
+    </section>
+
+    <section class="section-shell alt-section" id="references" aria-labelledby="references-title">
+      <div class="section-heading narrow">
+        <div><p class="section-kicker">Sources and course materials</p><h2 id="references-title">References</h2></div>
+      </div>
+      <div class="reference-columns">
+        <div>
+          <h3>Course presentations</h3>
+          <ul>
+            <li>Module 1: Telecommunications Fundamentals</li>
+            <li>Module 2: Network Architecture and Wireless Basics</li>
+            <li>Module 3: AI and ML for Telecommunications</li>
+            <li>Module 4: 5G Architecture and AI Integration</li>
+            <li>Module 5: Open RAN and AI</li>
+            <li>Modules 6–11 and 13 course presentations</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Assigned readings</h3>
+          <ul>
+            <li>AI-Driven Load Balancing in Paravirtualized 5G Networks</li>
+            <li>Advancements in Mobile Edge Computing</li>
+            <li>From DeepSense to Open RAN</li>
+            <li>AI-Native Multi-Access Future Networks: The REASON Architecture</li>
+            <li>Survey of AI-Enabled Digital Twin Networks in 6G</li>
+            <li>Course sustainability, smart-grid, cybersecurity, and edge-AI articles</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Software and frameworks</h3>
+          <ul>
+            <li>Python</li>
+            <li>NumPy and pandas</li>
+            <li>Matplotlib</li>
+            <li>scikit-learn</li>
+            <li>statsmodels</li>
+            <li>TensorFlow and TensorFlow Lite</li>
+            <li>Draw.io / diagrams.net</li>
+          </ul>
+        </div>
+      </div>
+      <p class="source-note">The graphs and diagrams displayed on this site were generated from course-provided concepts and code for portfolio presentation. Exact third-party publication details can be added from the title pages of the assigned PDFs when the original files are available.</p>
+    </section>
+
+    <section class="section-shell update-section" aria-labelledby="update-title">
+      <div>
+        <p class="section-kicker">Continuous portfolio</p>
+        <h2 id="update-title">Update record</h2>
+        <p>This portfolio was assembled from course milestones and is designed for continued revision. Replace recreated figures with original Canvas screenshots when available, add grade evidence only when verified, and record each meaningful update through GitHub commits.</p>
+      </div>
+      <div class="update-card">
+        <p><strong>Current version:</strong> 1.0</p>
+        <p><strong>Last content update:</strong> July 10, 2026</p>
+        <p><strong>Next review:</strong> Before final submission on July 20, 2026</p>
+        <a href="rubric-checklist.md">Open rubric checklist</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="section-shell footer-wrap">
+      <div><strong>Elizabeth Carrillo</strong><p>ITAI 4370 Course Portfolio · Houston City College</p></div>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
