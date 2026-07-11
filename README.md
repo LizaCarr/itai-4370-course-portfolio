@@ -41,5 +41,4 @@ The portfolio documents my learning progression from basic telecommunications co
 ## Live Portfolio
 
 View the published Course Portfolio here:
-
-`https://YOUR-GITHUB-USERNAME.github.io/itai-4370-course-portfolio/`
+https://lizacarr.github.io/itai-4370-course-portfolio/
